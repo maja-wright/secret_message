@@ -1,0 +1,158 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none !important;
+}
+
+img {
+    width: 100%;
+}
+
+a, a:visited {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+}
+
+.btn {
+    width: auto;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.btn:hover {
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all .7s;
+}
+
+/* MESSAGE */
+
+.book {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(leone-venter-VieM9BdZKFo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.book-page{
+    margin: 4rem;
+    padding: 4rem;
+    border: 10px double #f5f5f5;
+    border-radius: 1%;
+    width: 35%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    transform: translate(30%, 10%) rotate(-5deg);
+}
+
+.message-label {
+    font-size: 2.3rem;
+    padding: 2rem;
+}
+
+#message-textarea {
+    width: 60%;
+    padding: 1rem;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Dancing Script', cursive;
+    resize: none;
+}
+
+@media only screen and (max-width: 31.25em){
+    .book-page {
+        transform: none;
+        margin: 4rem auto 4rem auto;
+        height: auto;
+    }
+    .message-label {
+        font-size: 1.9rem;
+        padding: 1rem;
+    }
+}
+
+/* SHARE THE LINK */
+
+#link-form {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(scott-webb-hDyO6rr3kqk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; 
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.link {
+    padding: 2rem 2rem 2rem 10rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.link label {
+    padding: 2rem;
+    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+}
+.link input {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    border: 10px double #f5f5f5;
+}
+
+@media only screen and (max-width: 37.5em){
+    #link-form {
+        align-items: flex-start;
+    }
+    .link {
+        padding: 2rem 1.5rem;
+    }
+    .link input {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+}
