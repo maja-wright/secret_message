@@ -1,5 +1,5 @@
 # secret_message
-Send a Secret Message to Your Friends!
+Send a Secret Message to Your Friends!  
 
 Secret Message is a website where the user can write the message in the textarea which is then encrypted into the URL link. When the user presses the Create button, the content changes into the URL that the user can share with anyone. When this other person opens the link, it displays the message that user previosly typed. That person can also create their own secret message.
 
